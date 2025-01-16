@@ -2330,17 +2330,15 @@ body.scroll-disabled {
     .about-us .top-waves {
         transform: translateY(-95px);
         fill: var(--bg-content);
-
     }
 
     .about-us-content {
         padding: 1vh 0;
         margin: 0 auto;
-        max-width: 0;
+        max-width: 90%; /* Menyesuaikan max-width untuk responsivitas */
         flex-direction: column;
         align-items: center;
     }
-
 
     .about-us-img {
         display: flex;
@@ -2348,11 +2346,12 @@ body.scroll-disabled {
         flex-direction: column;
         align-items: center;
         max-width: 100%;
-        margin-bottom: 20px
+        margin-bottom: 20px;
     }
 
     .about-us-img img {
-        width: 200px;
+        width: 60%; /* Menggunakan persen untuk memastikan gambar responsif */
+        max-width: 200px; /* Membatasi ukuran gambar maksimal */
     }
 
     .about-us .eytho-logo {
@@ -2371,22 +2370,21 @@ body.scroll-disabled {
 
     .about-us-description {
         padding-left: 0;
-        min-width: 400px;
+        min-width: 80%; /* Menggunakan persen agar lebar lebih fleksibel */
     }
 
     .about-us-description h1 {
-        font-size: 3rem;
+        font-size: 2.5rem; /* Mengurangi ukuran font pada layar kecil */
         font-weight: 600;
         margin-top: 3vh;
     }
 
     .about-us-description p {
-        font-size: 16px;
-        /* margin-top: ; */
+        font-size: 1rem; /* Menggunakan rem untuk ukuran font yang lebih fleksibel */
     }
 
     .about-us-description .total-prize {
-        font-size: 15px;
+        font-size: 1rem; /* Menggunakan rem untuk ukuran font */
     }
 
     .about-us-description .title img {
@@ -2395,12 +2393,12 @@ body.scroll-disabled {
 
     .line-about {
         border-top: 3px solid var(--primary-color);
-        width: 15%;
+        width: 50%; /* Menyesuaikan lebar garis dengan perangkat kecil */
     }
 
     .ribbon-wrapper .card {
-        width: 325px;
-        height: 180px;
+        width: 100%; /* Agar card lebih fleksibel pada layar kecil */
+        height: auto;
     }
 
     .ribbon-wrapper .content {
@@ -2418,23 +2416,20 @@ body.scroll-disabled {
     .ribbon-wrapper .first img,
     .ribbon-wrapper .second img,
     .ribbon-wrapper .third img {
-        width: 35px;
+        width: 30px; /* Menyesuaikan ukuran gambar di ribbon */
     }
-
-
 
     .ribbon-wrapper h3 {
-        font-size: 1.16rem;
+        font-size: 1rem; /* Mengurangi ukuran font untuk responsivitas */
     }
 
-
-
     .ribbon {
-        width: 355px;
+        width: 100%; /* Menggunakan lebar 100% agar responsif */
+        max-width: 355px;
     }
 
     .ribbon span {
-        font-size: 20px !important;
+        font-size: 1.1rem; /* Menyesuaikan ukuran font untuk tampilan kecil */
     }
 
     .ribbon:before,
@@ -2451,18 +2446,14 @@ body.scroll-disabled {
         left: -1.5em;
         border-right-width: 1.5em;
         border-left-color: transparent;
-        -webkit-box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
-        -moz-box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
-        /* box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px; */
+        box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
     }
 
     .ribbon:after {
         right: -1.5em;
         border-left-width: 1.5em;
         border-right-color: transparent;
-        -webkit-box-shadow: rgba(0, 0, 0, 0.4) -1px 1px 1px;
-        -moz-box-shadow: rgba(0, 0, 0, 0.4) -1px 1px 1px;
-        /* box-shadow: rgba(0, 0, 0, 0.4) -1px 1px 1px; */
+        box-shadow: rgba(0, 0, 0, 0.4) -1px 1px 1px;
     }
 
     .ribbon .ribbon-content:before,
@@ -2477,12 +2468,15 @@ body.scroll-disabled {
 
     .benefit .money-bag svg,
     .benefit .plakat-ezzy svg {
-        width: 29px;
+        width: 25px; /* Menyesuaikan ukuran ikon pada perangkat kecil */
     }
 
     .text-shine {
-        font-size: 1.76rem;
+        font-size: 1.5rem; /* Mengurangi ukuran font untuk tampilan kecil */
     }
+
+
+
 
 
     #backToTop {
@@ -2625,34 +2619,35 @@ body.scroll-disabled {
 
     .competition-content-title {
         flex-direction: column-reverse;
+        text-align: center; /* Menyelaraskan teks di tengah */
     }
 
     .competition-content-title .left h1 {
-        font-size: 4rem;
+        font-size: 2.5rem; /* Menyesuaikan ukuran font pada layar kecil */
         text-align: center;
     }
 
-
     .competition-content-title .left p {
         text-align: center;
+        font-size: 1rem; /* Menyesuaikan ukuran font */
     }
 
     .competition-content .content {
         flex-direction: column;
-        gap: 21rem;
+        gap: 2rem; /* Mengurangi jarak antar elemen pada layar kecil */
     }
 
     .competition-content .title-wrapper {
         flex-direction: column;
-        gap: 5px;
+        gap: 10px;
     }
 
     .competition-content .title-wrapper .title-header {
-        font-size: 1.6rem;
+        font-size: 1.4rem; /* Menyesuaikan ukuran font pada layar kecil */
     }
 
     .competition .text h4 {
-        font-size: 1rem;
+        font-size: 1rem; /* Menyesuaikan ukuran font */
     }
 
     .competition .content-left .image-stack img:nth-child(1) {
@@ -2673,16 +2668,14 @@ body.scroll-disabled {
         transform: translate(-40px, -10px);
         width: 60%;
         border-radius: 5px;
-
     }
 
     .competition .content-right .image-stack img:nth-child(1) {
         position: absolute;
         z-index: 3;
         transform: translate(0, 65px);
-        width: 90%;
+        width: 100%; /* Mengubah lebar gambar agar lebih responsif */
         border-radius: 5px;
-
     }
 
     .competition .content-right .image-stack img:nth-child(2) {
@@ -2697,7 +2690,7 @@ body.scroll-disabled {
     .competition .image-stack {
         position: relative;
         width: 100%;
-        max-width: 500px;
+        max-width: 100%; /* Mengatur lebar menjadi 100% untuk fleksibilitas */
         height: auto;
     }
 
@@ -2734,55 +2727,58 @@ body.scroll-disabled {
     .location {
         background-color: var(--bg-content-secondary);
         position: relative;
-        top: 14%;
+        top: 10%; /* Menurunkan posisi agar lebih terlihat di layar kecil */
         padding-bottom: 2rem;
     }
 
-
     .location-wrapper {
-        padding: 2rem;
-        max-width: 1400px;
+        padding: 1rem; /* Mengurangi padding agar lebih sesuai di layar kecil */
+        max-width: 100%; /* Mengatur lebar agar lebih fleksibel */
     }
 
     .location .addres {
         flex-direction: column;
-        gap: 0;
+        gap: 1rem; /* Memberikan sedikit jarak antar elemen */
     }
 
     .location h1 {
-        font-size: 4rem;
+        font-size: 2rem; /* Menurunkan ukuran font agar lebih pas di layar kecil */
+        text-align: center; /* Menyelaraskan teks di tengah */
     }
 
-
     .footer {
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
+        border-top-left-radius: 20px; /* Mengurangi radius agar lebih kompak */
+        border-top-right-radius: 20px;
         position: relative;
-        top: 20%;
+        top: 10%; /* Menurunkan posisi untuk memastikan footer lebih terlihat */
     }
 
     .footer .footer-wrapper {
-        padding-inline: 2rem;
+        padding-inline: 1rem; /* Mengurangi padding agar lebih sesuai di layar kecil */
         margin: 0 auto;
         display: flex;
+        flex-direction: column; /* Mengubah arah flex agar lebih cocok di layar kecil */
     }
 
     .footer-content {
         display: flex;
         flex-direction: column;
+        align-items: center; /* Menyelaraskan konten di tengah */
     }
 
     .footer-section {
-        margin-bottom: 20px;
+        margin-bottom: 10px; /* Mengurangi jarak antar section untuk lebih rapat */
     }
 
     .footer-bottom {
-        margin-top: 0;
+        margin-top: 1rem; /* Memberikan sedikit ruang di atas footer */
         border-top: 1px solid #cdcdcd;
     }
 
     .social-icons a {
         color: var(--text-light);
+        font-size: 1.2rem; /* Menyesuaikan ukuran ikon sosial agar lebih proporsional */
+        margin: 0 5px; /* Memberikan sedikit ruang antar ikon sosial */
     }
 
 }
