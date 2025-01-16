@@ -4,13 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 }
 
 body {
-    height: 200vh;
+    /* height: 200vh; */
     transition: .6s ease;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 body.light-mode {
@@ -73,7 +73,7 @@ body.dark-mode {
 }
 
 ::-webkit-scrollbar {
-    /* display: none; */
+    display: none;
 }
 
 /* BUTTON CLASS */
@@ -299,7 +299,7 @@ body.dark-mode {
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
-    gap: 13rem;
+    /* gap: 13rem; */
 }
 
 .nav-list {
@@ -2347,6 +2347,7 @@ body.scroll-disabled {
         align-items: center;
         max-width: 100%;
         margin-bottom: 20px;
+        min-width: 0;
     }
 
     .about-us-img img {
