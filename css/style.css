@@ -2673,6 +2673,8 @@ body.scroll-disabled {
 
     .nav-list.active {
         left: 0;
+        width: 111vw;
+        height: 112vh;
     }
 
     .nav-list .active {
@@ -2712,7 +2714,7 @@ body.scroll-disabled {
         flex-direction: column;
         gap: 0;
         z-index: 1;
-        padding-inline: 40px;
+        padding-inline: 3vh;
         margin-top: -30vh;
     }
 
@@ -2772,7 +2774,7 @@ body.scroll-disabled {
 
     .regist-button .btn-eytho,
     .rulesle-btn .btn-eytho {
-        padding: 15px 130px;
+        padding: 15px 140px;
     }
 
     .the-buttons .rulesle-btn {
@@ -2816,7 +2818,7 @@ body.scroll-disabled {
 
     .about-us {
         flex-direction: column;
-        top: -17%;
+        top: -30vh;
     }
 
     .about-us .top-waves {
@@ -2824,8 +2826,7 @@ body.scroll-disabled {
     }
 
     .about-us-content {
-        padding: 1rem 0;
-        max-width: 100px;
+        padding: 1vh 0;
         margin: 0 auto;
         flex-direction: column;
         align-items: center;
@@ -3051,9 +3052,9 @@ body.scroll-disabled {
     #backToTop {
         position: fixed;
         bottom: 120px;
-        right: 37px;
-        width: 40px;
-        height: 40px;
+        right: 25px;
+        width: 45px;
+        height: 45px;
     }
 
     #backToTop svg {
@@ -3153,7 +3154,7 @@ body.scroll-disabled {
     }
 
     .regist-button .registrasi {
-        padding: 15px 140px;
+        padding: 17px 150px;
         border-radius: 5px;
         text-decoration: none;
     }
