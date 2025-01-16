@@ -2084,7 +2084,7 @@ body.scroll-disabled {
 
     body {
         width: 100vw;
-        max-width: 100%;
+        max-width: 101%;
         overflow-x: hidden !important;
         /* background: red !important; */
         /* overflow-x: hidden; */
