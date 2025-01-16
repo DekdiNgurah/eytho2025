@@ -2713,7 +2713,7 @@ body.scroll-disabled {
         gap: 0;
         z-index: 1;
         padding-inline: 40px;
-        margin-top: -20rem;
+        margin-top: -30vh;
     }
 
     .hero-content .color-overlay {
@@ -2865,7 +2865,7 @@ body.scroll-disabled {
     }
 
     .about-us-description h1 {
-        font-size: 1.5rem;
+        font-size: 3rem;
         font-weight: 600;
         margin-top: 3vh;
     }
@@ -2967,11 +2967,11 @@ body.scroll-disabled {
 
     .benefit .money-bag svg,
     .benefit .plakat-ezzy svg {
-        width: 27px;
+        width: 29px;
     }
 
     .text-shine {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .content-wrapper {
