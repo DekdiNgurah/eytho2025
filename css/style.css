@@ -2209,7 +2209,7 @@ body.scroll-disabled {
         z-index: 1;
         padding-inline: 3vh;
         margin-top: -30vh;
-        max-width: 430px;
+        max-width: 90%; /* Gunakan persen untuk max-width agar responsif */
     }
 
     .hero-content .color-overlay {
@@ -2218,16 +2218,18 @@ body.scroll-disabled {
 
     .hero-img-title {
         order: 1;
+        width: 100%; /* Agar gambar dapat mengikuti lebar kontainer */
     }
 
     .hero-img-title img {
         margin-top: 5vh;
-        width: 400px;
+        width: 80%; /* Menggunakan persentase agar gambar lebih fleksibel */
+        max-width: 400px; /* Membatasi ukuran gambar maksimal */
         filter: drop-shadow(2px 5px 10px rgba(0, 0, 0, 0.535));
     }
 
     .hero-title {
-        width: 108%;
+        width: 100%;
         gap: 1rem;
     }
 
@@ -2244,20 +2246,19 @@ body.scroll-disabled {
 
     .hero-title .title p {
         width: 100%;
-        font-size: 16px;
+        font-size: 1rem; /* Menggunakan rem untuk ukuran font yang lebih fleksibel */
         text-align: justify;
     }
 
     .hero-title .eytho-logos img {
         width: 100px;
-        display: none;
+        display: none; /* Menyembunyikan logo jika tidak diperlukan di ukuran kecil */
     }
 
     .hero-btn {
         display: flex;
         align-items: center;
         width: 100%;
-
     }
 
     .hero-btn .first-section {
