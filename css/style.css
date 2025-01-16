@@ -3152,8 +3152,10 @@ body.scroll-disabled {
         align-self: center;
     }
 
-    .regist-button a {
+    .regist-button .registrasi {
         padding: 15px 140px;
+        border-radius: 5px;
+        text-decoration: none;
     }
 
     .btn-regist {
