@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 body {
@@ -2084,7 +2084,7 @@ body.scroll-disabled {
 
     body {
         width: 100vw;
-        max-width: 101%;
+        max-width: 100%;
         overflow-x: hidden !important;
         /* background: red !important; */
         /* overflow-x: hidden; */
@@ -2476,8 +2476,7 @@ body.scroll-disabled {
     }
 
 
-
-
+    
 
     #backToTop {
         position: fixed;
@@ -2619,35 +2618,34 @@ body.scroll-disabled {
 
     .competition-content-title {
         flex-direction: column-reverse;
-        text-align: center; /* Menyelaraskan teks di tengah */
     }
 
     .competition-content-title .left h1 {
-        font-size: 2.5rem; /* Menyesuaikan ukuran font pada layar kecil */
+        font-size: 4rem;
         text-align: center;
     }
 
+
     .competition-content-title .left p {
         text-align: center;
-        font-size: 1rem; /* Menyesuaikan ukuran font */
     }
 
     .competition-content .content {
         flex-direction: column;
-        gap: 2rem; /* Mengurangi jarak antar elemen pada layar kecil */
+        gap: 21rem;
     }
 
     .competition-content .title-wrapper {
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
     }
 
     .competition-content .title-wrapper .title-header {
-        font-size: 1.4rem; /* Menyesuaikan ukuran font pada layar kecil */
+        font-size: 1.6rem;
     }
 
     .competition .text h4 {
-        font-size: 1rem; /* Menyesuaikan ukuran font */
+        font-size: 1rem;
     }
 
     .competition .content-left .image-stack img:nth-child(1) {
@@ -2668,14 +2666,16 @@ body.scroll-disabled {
         transform: translate(-40px, -10px);
         width: 60%;
         border-radius: 5px;
+
     }
 
     .competition .content-right .image-stack img:nth-child(1) {
         position: absolute;
         z-index: 3;
         transform: translate(0, 65px);
-        width: 100%; /* Mengubah lebar gambar agar lebih responsif */
+        width: 90%;
         border-radius: 5px;
+
     }
 
     .competition .content-right .image-stack img:nth-child(2) {
@@ -2690,7 +2690,7 @@ body.scroll-disabled {
     .competition .image-stack {
         position: relative;
         width: 100%;
-        max-width: 100%; /* Mengatur lebar menjadi 100% untuk fleksibilitas */
+        max-width: 500px;
         height: auto;
     }
 
@@ -2727,58 +2727,55 @@ body.scroll-disabled {
     .location {
         background-color: var(--bg-content-secondary);
         position: relative;
-        top: 10%; /* Menurunkan posisi agar lebih terlihat di layar kecil */
+        top: 14%;
         padding-bottom: 2rem;
     }
 
+
     .location-wrapper {
-        padding: 1rem; /* Mengurangi padding agar lebih sesuai di layar kecil */
-        max-width: 100%; /* Mengatur lebar agar lebih fleksibel */
+        padding: 2rem;
+        max-width: 1400px;
     }
 
     .location .addres {
         flex-direction: column;
-        gap: 1rem; /* Memberikan sedikit jarak antar elemen */
+        gap: 0;
     }
 
     .location h1 {
-        font-size: 2rem; /* Menurunkan ukuran font agar lebih pas di layar kecil */
-        text-align: center; /* Menyelaraskan teks di tengah */
+        font-size: 4rem;
     }
 
+
     .footer {
-        border-top-left-radius: 20px; /* Mengurangi radius agar lebih kompak */
-        border-top-right-radius: 20px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
         position: relative;
-        top: 10%; /* Menurunkan posisi untuk memastikan footer lebih terlihat */
+        top: 20%;
     }
 
     .footer .footer-wrapper {
-        padding-inline: 1rem; /* Mengurangi padding agar lebih sesuai di layar kecil */
+        padding-inline: 2rem;
         margin: 0 auto;
         display: flex;
-        flex-direction: column; /* Mengubah arah flex agar lebih cocok di layar kecil */
     }
 
     .footer-content {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Menyelaraskan konten di tengah */
     }
 
     .footer-section {
-        margin-bottom: 10px; /* Mengurangi jarak antar section untuk lebih rapat */
+        margin-bottom: 20px;
     }
 
     .footer-bottom {
-        margin-top: 1rem; /* Memberikan sedikit ruang di atas footer */
+        margin-top: 0;
         border-top: 1px solid #cdcdcd;
     }
 
     .social-icons a {
         color: var(--text-light);
-        font-size: 1.2rem; /* Menyesuaikan ukuran ikon sosial agar lebih proporsional */
-        margin: 0 5px; /* Memberikan sedikit ruang antar ikon sosial */
     }
 
 }
