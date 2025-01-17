@@ -112,7 +112,7 @@ const floatingElement = document.querySelector('.floating');
 let isScrolling; // Variabel untuk menyimpan timeout
 
 window.addEventListener('scroll', () => {
-    floatingElement.style.left = '-10%';
+    floatingElement.style.left = '-15%';
 
     clearTimeout(isScrolling);
 

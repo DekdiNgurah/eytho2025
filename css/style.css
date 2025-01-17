@@ -301,7 +301,7 @@ body.dark-mode {
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
-    /* gap: 13rem; */
+    gap: 10rem;
 }
 
 .nav-list {
