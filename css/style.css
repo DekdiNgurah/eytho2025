@@ -2228,7 +2228,7 @@ body.scroll-disabled {
     }
 
     .hero-section {
-        height: 150vh;
+        /* height: 150vh; */
         z-index: 0;
     }
 
@@ -2237,7 +2237,7 @@ body.scroll-disabled {
         gap: 0;
         z-index: 1;
         padding-inline: 3vh;
-        margin-top: -35vh;
+        /* margin-top: -35vh; */
         max-width: 90%; /* Gunakan persen untuk max-width agar responsif */
     }
 
@@ -2357,7 +2357,6 @@ body.scroll-disabled {
 
     .about-us {
         flex-direction: column;
-        top: -30vh;
         z-index: 0;
     }
 
