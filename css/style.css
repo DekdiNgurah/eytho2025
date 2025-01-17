@@ -508,6 +508,7 @@ body.dark-mode {
     font-family: "Teko", serif;
     font-size: 4.5rem;
     text-align: justify;
+    text-transform: capitalize;
 }
 
 .hero-title .title h1 span {
@@ -683,9 +684,10 @@ body.dark-mode {
     font-size: 1.3rem;
 }
 
-.about-us-description .title h1,
-.about-us-description h3 {
+.about-us-description .title h1 {
     font-family: "Teko", serif;
+    text-transform: capitalize;
+    font-size: 4rem;
 }
 
 .about-us-description p {
@@ -709,9 +711,6 @@ body.dark-mode {
     }
 }
 
-.about-us-description h1 {
-    font-size: 3.3rem;
-}
 
 .about-us-description h3 {
     font-size: 2rem;
@@ -2388,11 +2387,22 @@ body.scroll-disabled {
         min-width: 91vw; 
     }
 
-    .about-us-description h1 {
-        font-size: 2.5rem; 
+    .about-us-description .title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-us-description .title h1 {
+        font-size: 2.6rem; 
         font-weight: 500;
         margin-top: 3vh;
         text-align: justify;
+        text-transform: capitalize;
+        line-height: 5vh;
+    }
+
+    .about-us-description .title h1 span {
+        /* display: block; */
     }
 
     .about-us-description p {
@@ -2507,7 +2517,7 @@ body.scroll-disabled {
         right: 10px;
         width: 45px;
         height: 45px;
-        z-index: 0;
+        z-index: 1;
     }
 
     #backToTop svg {
