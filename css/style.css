@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 }
 
 *,
@@ -2475,7 +2475,7 @@ body.scroll-disabled {
     .competition .content-right .image-stack img:nth-child(2),
     .competition .content-right .image-stack img:nth-child(3) {
         position: relative; /* Mengubah posisi gambar menjadi relative */
-        width: 95vw; /* Gambar mengambil lebar penuh */
+        width: 86.5vw; /* Gambar mengambil lebar penuh */
         margin-bottom: -15vh; /* Menambahkan jarak antar gambar */
         margin-top: 15vh;
     }
