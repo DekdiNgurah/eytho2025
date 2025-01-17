@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 *,
@@ -1646,7 +1646,7 @@ body.dark-mode {
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(-90%);
+    transform: translateY(-97%);
     fill: var(--bg-content-secondary);
 }
 
@@ -2418,7 +2418,8 @@ body.scroll-disabled {
     }
 
     .competition-content-wrapper {
-        gap: 3em; /* Mengurangi gap antar konten */
+        gap: 3em; 
+        padding-block-start: 2vh;
     }
 
     .competition .title-wrapper {
@@ -2475,19 +2476,19 @@ body.scroll-disabled {
     .competition .content-right .image-stack img:nth-child(2),
     .competition .content-right .image-stack img:nth-child(3) {
         position: relative; /* Mengubah posisi gambar menjadi relative */
-        width: 86.5vw; /* Gambar mengambil lebar penuh */
+        width: 89vw; /* Gambar mengambil lebar penuh */
         margin-bottom: -15vh; /* Menambahkan jarak antar gambar */
         margin-top: 15vh;
     }
 
     .competition .content-right .image-stack img:nth-child(2),
     .competition .content-left .image-stack img:nth-child(2) {
-        transform: translate(-20px, -114px);
+        transform: translate(-10px, -110px);
     }
 
     .content-left .pattern-img {
-        top: -3%;
-        left: 70%;
+        top: -3.5%;
+        right: 6%;
     }
 
     .content-left .pattern-img {
@@ -2495,8 +2496,9 @@ body.scroll-disabled {
     }
 
     .content-right .image-stack .rectangle {
-        top: -6.5vh;
-        left: -8.5vw;
+        top: -8.7vh;
+        left: -9.5vw;
+        display: none;
     }
 
     .competition .pattern-img img {
@@ -2524,6 +2526,7 @@ body.scroll-disabled {
         text-decoration: underline;
         text-decoration-color: var(--third-color);
         text-transform: capitalize;
+        z-index: 3;
     }
 
     .read-more span {
@@ -2559,5 +2562,157 @@ body.scroll-disabled {
 
     .read-more:hover:before {
         background: transparent;
+    }
+
+
+
+
+
+
+
+    .location {
+        margin-top: 10vh; /* Menghilangkan margin-top besar pada layar kecil */
+        padding: 0 1vw; 
+        padding-block-end: 5vh;
+        bottom: 0; /* Menghapus pengaturan posisi bottom */
+    }
+
+    .location .eytho-pattern {
+        width: 38%; /* Mengurangi ukuran pola untuk layar kecil */
+        height: 18vh; /* Menyesuaikan tinggi pola */
+        top: -8%; /* Memposisikan ulang pola */
+        left: -15%; /* Menjaga agar tidak terlalu ke kiri */
+        opacity: 0.3; /* Menurunkan opasitas */
+    }
+
+    .location-wrapper {
+        padding: 1rem; /* Mengurangi padding untuk layar kecil */
+    }
+
+    .location-content {
+        flex-direction: column; /* Menyusun elemen dalam kolom untuk layar kecil */
+        gap: 1.5rem; /* Memberi jarak antar elemen */
+    }
+
+    .location-content .map {
+        width: 100%; /* Pastikan lebar maksimal mengikuti lebar container */
+        max-width: 100%; /* Hindari peta melampaui lebar layar */
+        height: 200px; /* Sesuaikan tinggi untuk layar kecil */
+        border-radius: 5px; /* Tambahkan radius agar tetap menarik */
+        box-sizing: border-box; /* Pastikan padding tidak menambah ukuran elemen */
+    }
+
+    .location-content .info {
+        border-radius: 5px; /* Menyesuaikan radius pada layar kecil */
+        padding: 1rem; /* Mengurangi padding */
+        text-align: center; /* Teks tetap berada di tengah */
+    }
+
+    .location-content .info h3 {
+        font-size: 2rem; /* Mengurangi ukuran font untuk layar kecil */
+    }
+
+    .location-content .info .find-us {
+        font-size: 0.9rem; /* Ukuran font lebih kecil untuk layar kecil */
+    }
+
+    .location-content .info .eytho-logo img {
+        width: 200px; /* Mengurangi ukuran logo */
+        right: -5rem; /* Menyesuaikan posisi logo */
+    }
+
+    .location-content .info a {
+        padding: 8px 15px; /* Menyesuaikan ukuran tombol */
+        font-size: 0.9rem; /* Ukuran font lebih kecil */
+    }
+
+    .location h1 {
+        font-size: 3rem; /* Ukuran heading lebih kecil untuk layar kecil */
+    }
+
+    .location .support-text {
+        font-size: 1rem; /* Ukuran teks pendukung lebih kecil */
+        padding-bottom: 1rem; /* Menambahkan jarak bawah */
+    }
+
+    .location .addres {
+        flex-direction: column; /* Menyusun alamat dalam kolom */
+        gap: 1rem; /* Jarak antar elemen alamat */
+    }
+
+    .location .located {
+        font-size: 14px; /* Ukuran font lebih kecil */
+        gap: 1rem; /* Mengurangi jarak antar elemen */
+    }
+
+    .location .located svg {
+        width: 30px; /* Ukuran ikon lebih kecil */
+        height: 30px; /* Menyesuaikan tinggi ikon */
+    }
+
+
+
+
+
+
+    .footer {
+        padding: 20px 10px; /* Kurangi padding agar sesuai dengan layar kecil */
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+
+    .footer .footer-wrapper {
+        padding-inline: 1rem; /* Sesuaikan padding kiri-kanan */
+        flex-direction: column; /* Atur elemen secara vertikal */
+        gap: 15px; /* Kurangi jarak antar elemen */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Susun konten secara vertikal */
+        gap: 15px; /* Tambahkan jarak antar elemen */
+    }
+
+    .footer-section {
+        min-width: 100%; /* Pastikan setiap section menggunakan lebar penuh */
+        text-align: center; /* Pusatkan teks untuk tampilan yang lebih baik */
+    }
+
+    .footer-logo {
+        width: 200px; /* Sesuaikan ukuran logo */
+        margin: 0 auto 15px auto; /* Pusatkan logo */
+    }
+
+    .footer-section h4 {
+        font-size: 1rem; /* Perkecil ukuran heading */
+        margin-bottom: 8px;
+    }
+
+    .footer-section p {
+        font-size: 12px; /* Sesuaikan ukuran teks */
+        line-height: 1.4; /* Kurangi tinggi baris untuk tampilan rapi */
+    }
+
+    .footer-section ul li {
+        margin-bottom: 5px; /* Kurangi jarak antar item */
+    }
+
+    .footer-section ul li a {
+        font-size: 12px; /* Sesuaikan ukuran teks tautan */
+    }
+
+    .social-icons a {
+        font-size: 16px; /* Perkecil ukuran ikon sosial */
+        margin-right: 5px; /* Kurangi jarak antar ikon */
+    }
+
+    .footer-bottom {
+        flex-direction: column; /* Atur elemen secara vertikal */
+        text-align: center; /* Pusatkan konten */
+        gap: 10px; /* Tambahkan jarak antar elemen */
+        font-size: 12px; /* Perkecil ukuran teks */
+    }
+
+    .footer-bottom a {
+        font-size: 12px; /* Sesuaikan ukuran tautan */
     }
 }
