@@ -2405,6 +2405,12 @@ body.scroll-disabled {
     
 
     /* COMPETITION  */
+
+    .competition {
+        padding-block-start: 5vh;
+        padding-inline: 0;
+    }
+
     .competition .content {
         flex-direction: column; /* Membuat konten menjadi kolom pada layar kecil */
         align-items: center; /* Menyusun elemen di tengah */
@@ -2415,8 +2421,13 @@ body.scroll-disabled {
         gap: 3em; /* Mengurangi gap antar konten */
     }
 
+    .competition .title-wrapper {
+        flex-direction: column;
+        gap: 0;
+    }
+
     .competition-content-title {
-        flex-direction: column; /* Menumpuk judul dan gambar */
+        flex-direction: column-reverse; /* Menumpuk judul dan gambar */
         text-align: center;
     }
 
@@ -2425,7 +2436,7 @@ body.scroll-disabled {
     }
 
     .competition-content-title .right img {
-        width: 100px; /* Menyesuaikan lebar gambar */
+        width: 50vw; /* Menyesuaikan lebar gambar */
     }
 
     .competition .content {
@@ -2465,7 +2476,26 @@ body.scroll-disabled {
     .competition .content-right .image-stack img:nth-child(3) {
         position: relative; /* Mengubah posisi gambar menjadi relative */
         width: 100%; /* Gambar mengambil lebar penuh */
-        margin-bottom: 1rem; /* Menambahkan jarak antar gambar */
+        margin-bottom: -15vh; /* Menambahkan jarak antar gambar */
+        margin-top: 15vh;
+    }
+
+    .competition .content-right .image-stack img:nth-child(2) {
+        transform: translate(0, -114px);
+    }
+
+    .content-left .pattern-img {
+        top: -3%;
+        left: 70%;
+    }
+
+    .content-left .pattern-img {
+        transform: scaleX(1);
+    }
+
+    .content-right .image-stack .rectangle {
+        top: -6.5vh;
+        left: -8.5vw;
     }
 
     .competition .pattern-img img {
@@ -2481,13 +2511,18 @@ body.scroll-disabled {
         font-size: 2rem; /* Menyesuaikan ukuran judul utama */
     }
 
+
     .competition .btn {
         padding: 8px 16px; /* Menyesuaikan ukuran tombol */
         font-size: 14px; /* Menyesuaikan ukuran font tombol */
     }
 
     .read-more {
-        padding: 10px 14px; /* Menyesuaikan padding tombol baca lebih lanjut */
+        padding: 0 0;
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: var(--third-color);
+        text-transform: capitalize;
     }
 
     .read-more span {
@@ -2496,5 +2531,32 @@ body.scroll-disabled {
 
     .read-more svg {
         width: 18px; /* Menyesuaikan ukuran ikon */
+        stroke: var(--third-color);
+    }
+
+
+
+    .read-more:before {
+        background: transparent;
+        width: 100%;
+        height: 40px;
+        transition: all 0.3s ease;
+    }
+
+    .read-more span {
+        color: var(--third-color);
+        position: relative;
+        font-family: "Manrope", serif;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
+
+    .read-more:hover:before {
+        background: transparent;
+    }
+
+    .read-more:hover:before {
+        background: transparent;
     }
 }
