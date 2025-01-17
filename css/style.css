@@ -7,6 +7,10 @@
     /* border: 1px solid blue; */
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     /* height: 200vh; */
     transition: .6s ease;
@@ -377,21 +381,14 @@ body.dark-mode {
 }
 
 .hero-section {
-    /* position: relative;   */
     width: 100%;
     height: 110vh;
-
-    /* background: url('../assets/images/hero-bg-paper.jpg') no-repeat center center/cover; */
-    /* background-attachment: fixed; */
-
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--text-dark);
     text-align: center;
-
     background-color: var(--bg-content-secondary);
-
     transition: .6s ease;
 }
 
@@ -436,8 +433,6 @@ body.dark-mode {
 
 .hero-img-title img {
     width: 500px;
-    /* filter: drop-shadow(9px 9px 5px rgba(0, 0, 0, 0.535)); */
-    /* animation: spin 30s linear infinite; */
     animation: float 5s ease-in-out infinite;
 
 }
@@ -454,27 +449,6 @@ body.dark-mode {
     100% {
         transform: translateY(0);
     }
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.shape {
-    width: 800px;
-    height: 735px;
-    background: #7998ff;
-    position: absolute;
-    top: 100px;
-    left: 850px;
-    opacity: .1;
-    animation: wave 50s ease-in-out infinite;
 }
 
 
@@ -2121,6 +2095,7 @@ body.scroll-disabled {
         z-index: 10;
         padding: 15px 10px !important;
         transition: .6s ease;
+        margin-bottom: 1vh;
         /* background-color: var(--bg-content); */
 
     }
