@@ -2217,7 +2217,7 @@ body.scroll-disabled {
         gap: 0;
         z-index: 1;
         padding-inline: 3vh;
-        margin-top: -15vh;
+        margin-top: -35vh;
         max-width: 90%; /* Gunakan persen untuk max-width agar responsif */
     }
 
@@ -2232,8 +2232,7 @@ body.scroll-disabled {
 
     .hero-img-title img {
         margin-top: 5vh;
-        width: 80%; /* Menggunakan persentase agar gambar lebih fleksibel */
-        max-width: 400px; /* Membatasi ukuran gambar maksimal */
+        width: 100%; 
         filter: drop-shadow(2px 5px 10px rgba(0, 0, 0, 0.535));
     }
 
@@ -2244,7 +2243,7 @@ body.scroll-disabled {
     }
 
     .hero-title .title h1 {
-        font-size: 3.1rem;
+        font-size: 3rem;
         width: 100%;
         text-align: center;
         line-height: 45px;
@@ -2290,7 +2289,7 @@ body.scroll-disabled {
 
     .regist-button .btn-eytho,
     .rulesle-btn .btn-eytho {
-        padding: 15px 128px;
+        padding: 2.5vh 27.5vw;
     }
 
     .the-buttons .rulesle-btn {
@@ -2366,8 +2365,8 @@ body.scroll-disabled {
     }
 
     .about-us-img img {
-        width: 60%; /* Menggunakan persen untuk memastikan gambar responsif */
-        max-width: 200px; /* Membatasi ukuran gambar maksimal */
+        /* width: 60%;  */
+        max-width: 100vw; 
     }
 
     .about-us .eytho-logo {
@@ -2386,17 +2385,19 @@ body.scroll-disabled {
 
     .about-us-description {
         padding-left: 0;
-        min-width: 80%; /* Menggunakan persen agar lebar lebih fleksibel */
+        min-width: 91vw; 
     }
 
     .about-us-description h1 {
-        font-size: 2.5rem; /* Mengurangi ukuran font pada layar kecil */
-        font-weight: 600;
+        font-size: 2.5rem; 
+        font-weight: 500;
         margin-top: 3vh;
+        text-align: justify;
     }
 
     .about-us-description p {
-        font-size: 1rem; /* Menggunakan rem untuk ukuran font yang lebih fleksibel */
+        font-size: 1rem; 
+        text-align: justify;
     }
 
     .about-us-description .total-prize {
@@ -2413,12 +2414,12 @@ body.scroll-disabled {
     }
 
     .ribbon-wrapper .card {
-        width: 100%; /* Agar card lebih fleksibel pada layar kecil */
-        height: auto;
+        width: 100%; 
+        height: 21vh;
     }
 
     .ribbon-wrapper .content {
-        top: 18%;
+        top: 25%;
     }
 
     .ribbon-wrapper .first,
@@ -2440,8 +2441,8 @@ body.scroll-disabled {
     }
 
     .ribbon {
-        width: 100%; /* Menggunakan lebar 100% agar responsif */
-        max-width: 355px;
+        /* width: 100%;  */
+        max-width: 81.5vw;
     }
 
     .ribbon span {
@@ -2484,11 +2485,11 @@ body.scroll-disabled {
 
     .benefit .money-bag svg,
     .benefit .plakat-ezzy svg {
-        width: 25px; /* Menyesuaikan ukuran ikon pada perangkat kecil */
+        width: 25px; 
     }
 
     .text-shine {
-        font-size: 1.5rem; /* Mengurangi ukuran font untuk tampilan kecil */
+        font-size: 1.48rem;
     }
 
 
@@ -2606,7 +2607,7 @@ body.scroll-disabled {
     }
 
     .regist-button .registrasi {
-        padding: 17px 138px;
+        padding: 2.5vh 30vw;
         border-radius: 5px;
         text-decoration: none;
     }
