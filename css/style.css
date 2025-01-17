@@ -2475,13 +2475,14 @@ body.scroll-disabled {
     .competition .content-right .image-stack img:nth-child(2),
     .competition .content-right .image-stack img:nth-child(3) {
         position: relative; /* Mengubah posisi gambar menjadi relative */
-        width: 100%; /* Gambar mengambil lebar penuh */
+        width: 95vw; /* Gambar mengambil lebar penuh */
         margin-bottom: -15vh; /* Menambahkan jarak antar gambar */
         margin-top: 15vh;
     }
 
-    .competition .content-right .image-stack img:nth-child(2) {
-        transform: translate(0, -114px);
+    .competition .content-right .image-stack img:nth-child(2),
+    .competition .content-left .image-stack img:nth-child(2) {
+        transform: translate(-20px, -114px);
     }
 
     .content-left .pattern-img {
