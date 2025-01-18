@@ -2480,19 +2480,17 @@ body.scroll-disabled {
     .competition .content-left .image-stack img:nth-child(2),
     .competition .content-right .image-stack img:nth-child(2) {
         transform: translate(0, 0); 
-        box-shadow: -24px 20px 1px var(--primary-color);
+        box-shadow: -20px 20px 1px #710101;
     }
 
     .competition .content-right .image-stack img:nth-child(2) {
         width: 100%;
     }
 
-    .content-left .pattern-img {
+    .content-left .pattern-img,
+    .content-right .pattern-img {
         top: -2.5em;
         right: -1em;
-    }
-
-    .content-left .pattern-img {
         transform: scaleX(1);
     }
 
