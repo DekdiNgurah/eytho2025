@@ -345,7 +345,7 @@ body.dark-mode {
     font-size: 22px;
 }
 
-.nav-text.active {
+.navbar .nav-text.active {
     color: var(--primary-color);
     font-weight: bold;
     font-size: 20px;
@@ -630,8 +630,8 @@ body.dark-mode {
     background: var(--text-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 900;
-    font-size: 1.3rem;
+    font-weight: 700;
+    font-size: 1.1rem;
 }
 
 .about-us-description .title h1 {
@@ -808,7 +808,7 @@ body.dark-mode {
 .ribbon-wrapper .third {
     display: flex;
     align-items: center;
-    gap: 2.5rem;
+    gap: 1rem;
 }
 
 .ribbon-wrapper .first img,
@@ -821,7 +821,7 @@ body.dark-mode {
 
 .ribbon-wrapper h3 {
     font-family: 'Manrope', serif;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
     background: var(--text-gradient);
     -webkit-background-clip: text;
@@ -1604,9 +1604,8 @@ body.dark-mode {
 
 .contact-us-content {
     display: flex;
-    padding: 1rem 5rem 5rem 5rem;
+    padding: 1rem 5rem 15rem 5rem;
     max-width: 1400px;
-    /* background-color: var(--bg-content); */
     border-radius: 8px;
     margin: 0 auto;
     overflow: hidden;
@@ -1701,6 +1700,7 @@ body.dark-mode {
     border-top-right-radius: 100px;
     position: relative;
     z-index: 0;
+    margin-top: -15vh;
 }
 
 .footer .footer-wrapper {
@@ -1860,6 +1860,8 @@ body.dark-mode {
     visibility: visible;
 }
 
+
+
 .floating {
     height: 100vh;
     display: grid;
@@ -2008,37 +2010,50 @@ body.scroll-disabled {
 
     .navbar {
         z-index: 3;
-        padding: 2vh 2vw !important;
+        padding: 1.5vh 2vw !important;
         transition: .6s ease;
-        margin-bottom: 1vh;
         margin-bottom: 2rem;
+        background-color: var(--bg-content);
+        box-shadow: 0px -18px 30px rgba(0, 0, 0, 0.3);
+        position: fixed;
+        width: 100%;
     }
 
     .navbar.fixed {
-        padding: 2.1vh 2vw !important;
+        padding: 1.2vh 2vw !important;
         background-color: var(--bg-content);
-        box-shadow: 0px -18px 30px black;
-    }
-
-    .navbar.fixed .wrapper .menu-toggle .bar {
-        stroke: var(--primary-color);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     .navbar .logo {
         filter: none;
     }
 
-    .navbar .wrapper .menu-toggle .bar {
-        stroke: var(--primary-color);
-    }
-
     .navbar .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
-        gap: 3em;
+        gap: 1em;
     }
 
     .wrapper .logo img {
-        width: 150px;
+        width: 120px;
+        /* Ukuran logo lebih kecil untuk layar kecil */
+    }
+
+    .menu-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .menu-toggle .bar {
+        stroke: var(--primary-color);
+        width: 24px;
+        height: 24px;
     }
 
     .nav-list {
@@ -2046,18 +2061,21 @@ body.scroll-disabled {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        gap: 55px;
+        justify-content: left;
+        gap: 5vh;
         width: 100vw;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 0;
-        left: -945px;
-        z-index: 0;
+        left: -100%;
+        z-index: 100;
         background-color: var(--bg-content);
-        transition: left .7s ease-in-out;
-        padding: 5px;
-        padding-bottom: 3rem;
-        transition: .6s ease;
+        padding: .1rem .2rem;
+        transition: left 0.6s ease;
+    }
+
+    .nav-list li {
+        margin: 0 10px;
     }
 
     .nav-list.light-mode {
@@ -2070,47 +2088,43 @@ body.scroll-disabled {
 
     .nav-list .nav-text,
     .nav-list .nav-user {
-        font-size: 19px;
-        font-weight: 600;
+        font-size: 1.3rem;
         color: var(--primary-color);
         padding: 10px;
     }
 
     .nav-list .nav-text:hover {
-        font-size: 19px;
-        font-weight: 600;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: var(--secondary-color);
     }
 
     .nav-list.active {
         left: 0;
-        /* width: 111vw; */
-        /* height: 112vh; */
-        z-index: 3;
     }
 
     .nav-list .active {
-        font-size: 22px;
+        font-size: 1.4rem;
         font-weight: bold;
+        color: var(--highlight-color);
     }
 
     .nav-list .active:hover {
-        font-size: 22px;
+        font-size: 1.3rem;
         font-weight: bold;
     }
 
-    .menu-toggle {
-        display: flex;
-    }
-
     .logo-menu {
-        display: block;
-        background-color: transparent;
-        width: 200px;
+        display: inline;
+        width: 120px;
     }
 
     .close-menu {
         cursor: pointer;
         display: block;
+        align-self: flex-end;
+        font-size: 18px;
+        color: var(--primary-color);
     }
 
 
@@ -2135,6 +2149,12 @@ body.scroll-disabled {
         padding: 2vh 6vw;
 
         font-size: 0.9rem;
+    }
+
+
+    .btn-eytho-s {
+        padding: 1.5vh 6vw;
+        font-size: .9rem;
     }
 
     .hero-content {
@@ -2599,6 +2619,12 @@ body.scroll-disabled {
     }
 
 
+
+
+
+
+
+
     .contact-us-content {
         padding: 0 0 15vh 0;
         flex-direction: column;
@@ -2633,6 +2659,7 @@ body.scroll-disabled {
         display: flex;
         justify-content: center;
     }
+
     .contact-us button {
         padding: 2vh 33vw;
     }
@@ -2661,7 +2688,7 @@ body.scroll-disabled {
 
     .footer-section {
         min-width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     .footer-logo {
@@ -2703,18 +2730,70 @@ body.scroll-disabled {
         font-size: 12px;
     }
 
+    #backToTop {
+        width: 40px;
+        /* Lebar button lebih kecil */
+        height: 40px;
+        /* Tinggi button lebih kecil */
+        bottom: 80px;
+        /* Posisi lebih dekat dengan bawah */
+        right: 10px;
+        /* Posisi lebih dekat dengan tepi kanan */
+        font-size: 16px;
+        /* Font-size lebih kecil */
+        z-index: 2;
+    }
+
+    #backToTop svg {
+        width: 20px;
+        /* Ukuran ikon lebih kecil */
+        height: 20px;
+    }
+
 
 
     .floating {
         z-index: 2;
+        left: 5%;
+    }
+
+    .floating__toggle {
+        width: 40px;
+        /* Lebar lebih kecil */
+        height: 40px;
+        /* Tinggi lebih kecil */
+    }
+
+    .floating__toggle svg {
+        width: 30px;
+        /* Ukuran ikon lebih kecil */
+        height: 30px;
+    }
+
+    .floating__icon,
+    .floating__link {
+        width: 40px;
+        /* Ukuran lebih kecil */
+        height: 40px;
+    }
+
+    .active~ul .floating__link:nth-child(1) {
+        transform: translate(2.5rem, -2.5rem);
+        /* Jarak lebih kecil */
+    }
+
+    .active~ul .floating__link:nth-child(2) {
+        transform: translate(4rem);
+        /* Jarak lebih kecil */
+    }
+
+    .active~ul .floating__link:nth-child(3) {
+        transform: translate(2.5rem, 2.5rem);
+        /* Jarak lebih kecil */
     }
 
     .overlay {
         z-index: 1;
-    }
-
-    #backToTop {
-        z-index: 2;
     }
 
 
