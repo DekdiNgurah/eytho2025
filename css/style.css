@@ -1346,22 +1346,9 @@ body.dark-mode {
 
 .competition .text p {
     font-size: 16px;
-    color: #555;
+    color: var(--text-dark-secondary);
     margin-bottom: 20px;
-}
-
-.competition .btn {
-    background-color: #ff6600;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.competition .btn:hover {
-    background-color: #e55a00;
+    font-family: "Manrope", serif;
 }
 
 .read-more {
@@ -1516,18 +1503,15 @@ body.dark-mode {
 
 .location h1 {
     text-align: center;
-    position: relative;
     z-index: 2;
     font-family: 'Manrope', serif;
     font-size: 4rem;
+    margin-block-end: 1rem;
     text-transform: capitalize;
     font-weight: 700;
-    margin: 0;
-    padding: 0;
 }
 
 .location .support-text {
-    position: relative;
     text-align: center;
     z-index: 2;
     padding-bottom: 10px;
@@ -1645,16 +1629,17 @@ body.dark-mode {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 14px;
     transition: .3s;
-    background-color: var(--bg-content-for-secondary);
+    /* background-color: var(--bg-content-for-secondary); */
+    background-color: transparent;
 }
 
 .contact-us-content .form-group input:focus,
 .contact-us-content .form-group textarea:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 5px #f3484885;
+    box-shadow: 0 0 4px #f3484885;
     outline: none;
 }
 
@@ -2005,22 +1990,23 @@ body.scroll-disabled {
 @media (max-width: 500px) {
     .scroll-watcher {
         height: 2px;
+        z-index: 10;
     }
 
 
     .navbar {
         z-index: 3;
-        padding: 1.5vh 2vw !important;
+        padding: 1.7vh 2vw !important;
         transition: .6s ease;
         margin-bottom: 2rem;
-        background-color: var(--bg-content);
-        box-shadow: 0px -18px 30px rgba(0, 0, 0, 0.3);
+        background-color: transparent;
+        /* box-shadow: 0px -18px 30px rgba(0, 0, 0, 0.3); */
         position: fixed;
         width: 100%;
     }
 
     .navbar.fixed {
-        padding: 1.2vh 2vw !important;
+        padding: 1.3vh 2vw !important;
         background-color: var(--bg-content);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
@@ -2038,8 +2024,7 @@ body.scroll-disabled {
     }
 
     .wrapper .logo img {
-        width: 120px;
-        /* Ukuran logo lebih kecil untuk layar kecil */
+        width: 130px;
     }
 
     .menu-toggle {
@@ -2052,8 +2037,8 @@ body.scroll-disabled {
 
     .menu-toggle .bar {
         stroke: var(--primary-color);
-        width: 24px;
-        height: 24px;
+        width: 27px;
+        height: 27px;
     }
 
     .nav-list {
@@ -2178,7 +2163,7 @@ body.scroll-disabled {
     }
 
     .hero-title .title p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .hero-btn {
@@ -2265,7 +2250,7 @@ body.scroll-disabled {
     }
 
     .about-us-description p {
-        font-size: 15px;
+        font-size: 1rem;
         text-align: justify;
     }
 
@@ -2400,6 +2385,10 @@ body.scroll-disabled {
         font-size: 2.5em;
     }
 
+    .competition-contentitle .left p {
+        font-size: 1rem;
+    }
+
     .competition-content-title .right img {
         width: 100%;
         max-width: 50vw;
@@ -2477,6 +2466,10 @@ body.scroll-disabled {
         font-size: 1.2rem;
     }
 
+    .competition .text p {
+        font-size: 1rem;
+    }
+
     .competition .text .title-header {
         font-size: 1.5em;
     }
@@ -2549,7 +2542,7 @@ body.scroll-disabled {
         width: 6em;
         height: 6em;
         top: -8%;
-        left: -15%;
+        left: -10%;
         opacity: 0.3;
     }
 
@@ -2609,7 +2602,7 @@ body.scroll-disabled {
     }
 
     .location .located {
-        font-size: 14px;
+        font-size: .9rem;
         gap: 1rem;
     }
 
@@ -2732,15 +2725,10 @@ body.scroll-disabled {
 
     #backToTop {
         width: 40px;
-        /* Lebar button lebih kecil */
         height: 40px;
-        /* Tinggi button lebih kecil */
         bottom: 80px;
-        /* Posisi lebih dekat dengan bawah */
-        right: 10px;
-        /* Posisi lebih dekat dengan tepi kanan */
+        right: 20px;
         font-size: 16px;
-        /* Font-size lebih kecil */
         z-index: 2;
     }
 
