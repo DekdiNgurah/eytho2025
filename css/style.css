@@ -2630,6 +2630,9 @@ body.scroll-disabled {
 
     .contact-us-content .form-contact-us p {
         text-align: center;
+        font-size: 1rem;
+        font-family: "Manrope", serif;
+        color: var(--text-dark-secondary);
     }
 
     .contact-us .form-group .field {
