@@ -312,6 +312,20 @@ window.addEventListener("click", (event) => {
 
 
 //NAVIGATION COMPETITION 
+
+function toggleMenu() {
+    const navigationMenu = document.getElementById('navigationMenu');
+    const body = document.body;
+    
+    navigationMenu.classList.toggle('open');
+    
+    if (navigationMenu.classList.contains('open')) {
+        body.classList.add('no-scroll');
+    } else {
+        body.classList.remove('no-scroll');
+    }
+}
+
 let startX = 0; 
 let endX = 0; 
 
@@ -325,25 +339,18 @@ document.addEventListener('touchend', (e) => {
     if (startX - endX > 50) { 
         const navigationMenu = document.getElementById('navigationMenu');
         navigationMenu.classList.add('open'); 
+
+        document.body.classList.add('no-scroll');
     }
 });
-
-
-document.addEventListener('touchend', (e) => {
-    endX = e.changedTouches[0].clientX;
-
-    if (endX - startX > 50) { 
-        const navigationMenu = document.getElementById('navigationMenu');
-        navigationMenu.classList.remove('open'); 
-    }
-});
-
 
 document.addEventListener('click', function (e) {
     const navigationMenu = document.getElementById('navigationMenu');
     const arrow = document.querySelector('.arrow');
-    
+
     if (!navigationMenu.contains(e.target) && !arrow.contains(e.target)) {
         navigationMenu.classList.remove('open'); 
+        document.body.classList.remove('no-scroll'); 
     }
 });
+
