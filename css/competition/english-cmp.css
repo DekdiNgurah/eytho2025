@@ -29,7 +29,7 @@ body.dark-mode {
     color: var(--text-light);
 }
 
-.no-scroll {
+body.no-scroll {
     overflow: hidden;
 }
 
@@ -472,7 +472,7 @@ body.dark-mode {
 .competition-wrapper-content .title h1 {
     font-size: 3rem;
     font-weight: 800;
-    /* color: var(--primary-color); */
+    color: var(--text-dark);
 }
 
 .competition-wrapper-content .title h3 {
@@ -524,14 +524,6 @@ body.dark-mode {
     /* box-shadow: 10px 10px #620000; */
 }
 
-.competition-left {
-    /* flex-direction: row-reverse; */
-}
-
-.competition-right {
-    /* flex-direction: row-reverse; */
-    /* text-align: right; */
-}
 
 .competition-right button {
     outline: 0;
@@ -552,12 +544,13 @@ body.dark-mode {
 .competition-right .image {
     display: flex;
     justify-content: left;
-    padding: 20px;
+    padding-block-start: 20px;
 }
 
 .competition-left .image {
     display: flex;
     justify-content: right;
+    padding-block-start: 20px;
 }
 
 .competition h1 {
@@ -1510,7 +1503,11 @@ body.scroll-disabled {
     }
 
     .hero-content h1 {
-        font-size: 3em;
+        font-size: 2.5em;
+    }
+
+    .competition-wrapper-content .title h1 {
+        font-size: 2.5em;
     }
 
     .hero-content h3 {
@@ -1557,6 +1554,7 @@ body.scroll-disabled {
 
     .competition-wrapper-content {
         padding-inline: 0;
+        gap: 3vh;
     }
 
     .competition .text {
