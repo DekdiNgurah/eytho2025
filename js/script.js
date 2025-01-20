@@ -308,3 +308,42 @@ window.addEventListener("click", (event) => {
         }
     });
 });
+
+
+
+//NAVIGATION COMPETITION 
+let startX = 0; 
+let endX = 0; 
+
+document.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX; 
+});
+
+document.addEventListener('touchend', (e) => {
+    endX = e.changedTouches[0].clientX; 
+
+    if (startX - endX > 50) { 
+        const navigationMenu = document.getElementById('navigationMenu');
+        navigationMenu.classList.add('open'); 
+    }
+});
+
+
+document.addEventListener('touchend', (e) => {
+    endX = e.changedTouches[0].clientX;
+
+    if (endX - startX > 50) { 
+        const navigationMenu = document.getElementById('navigationMenu');
+        navigationMenu.classList.remove('open'); 
+    }
+});
+
+
+document.addEventListener('click', function (e) {
+    const navigationMenu = document.getElementById('navigationMenu');
+    const arrow = document.querySelector('.arrow');
+    
+    if (!navigationMenu.contains(e.target) && !arrow.contains(e.target)) {
+        navigationMenu.classList.remove('open'); 
+    }
+});
