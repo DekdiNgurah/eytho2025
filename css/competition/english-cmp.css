@@ -454,6 +454,9 @@ body.no-scroll {
 .navigation-competition-content .content .competition-nav p {
     font-size: 10px;
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .image-nav img {
@@ -563,6 +566,7 @@ body.no-scroll {
 .competition p {
     color: var(--text-dark-secondary);
     font-size: 1rem;
+    
 }
 
 .competition-left .pattern {
@@ -1545,6 +1549,18 @@ body.scroll-disabled {
         text-align: center;
         padding: 0;
         padding-block-end: 2vh;
+    }
+
+    .navigation-competition-content .content .competition-nav p {
+        width: 145px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .image-nav img {
+        width: 70px;
+        height: 60px;
     }
 
     .buttons {
