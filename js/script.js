@@ -190,21 +190,18 @@ function toggleMode() {
     const lightModeIcon = document.getElementById('light-mode');
     const darkModeIcon = document.getElementById('dark-mode');
     
-    // Toggle visibility of icons
     if (lightModeIcon.style.display === "none") {
         lightModeIcon.style.display = "block";
         darkModeIcon.style.display = "none";
         document.body.classList.remove('dark-mode');
         document.body.classList.add('light-mode');
 
-        // Update all containers
         const containers = document.querySelectorAll('div, nav, ul, p, svg, a');
         containers.forEach(container => {
             container.classList.remove('dark-mode');
             container.classList.add('light-mode');
         });
 
-        // Simpan mode ke sessionStorage
         sessionStorage.setItem('mode', 'light');
     } else {
         lightModeIcon.style.display = "none";
@@ -212,21 +209,18 @@ function toggleMode() {
         document.body.classList.remove('light-mode');
         document.body.classList.add('dark-mode');
 
-        // Update all containers
         const containers = document.querySelectorAll('div, nav, ul, p, svg, a');
         containers.forEach(container => {
             container.classList.remove('light-mode');
             container.classList.add('dark-mode');
         });
 
-        // Simpan mode ke sessionStorage
         sessionStorage.setItem('mode', 'dark');
     }
 }
 
-// Fungsi untuk memuat mode dari sessionStorage saat halaman dimuat
 function loadMode() {
-    const mode = sessionStorage.getItem('mode'); // Ambil mode dari sessionStorage
+    const mode = sessionStorage.getItem('mode'); 
     const lightModeIcon = document.getElementById('light-mode');
     const darkModeIcon = document.getElementById('dark-mode');
 
@@ -255,9 +249,8 @@ function loadMode() {
     }
 }
 
-// Set default mode saat halaman dimuat ulang setelah sesi berakhir
 function resetModeToDefault() {
-    sessionStorage.clear(); // Hapus data sesi saat ini
+    sessionStorage.clear(); 
     const lightModeIcon = document.getElementById('light-mode');
     const darkModeIcon = document.getElementById('dark-mode');
     lightModeIcon.style.display = "block";
@@ -272,7 +265,6 @@ function resetModeToDefault() {
     });
 }
 
-// Muat mode saat halaman dimuat
 window.onload = () => {
     if (sessionStorage.getItem('mode')) {
         loadMode();
@@ -285,7 +277,34 @@ window.onload = () => {
 
 
 
+// MODAL TIMELINE
+const openBtns = document.querySelectorAll(".openModalBtn");
+const closeBtns = document.querySelectorAll(".modal .close");
 
+openBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const modalId = btn.getAttribute("data-target");
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.style.display = "block";
+        }
+    });
+});
 
+closeBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const modal = btn.closest(".modal");
+        if (modal) {
+            modal.style.display = "none";
+        }
+    });
+});
 
-
+window.addEventListener("click", (event) => {
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach(modal => {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+});

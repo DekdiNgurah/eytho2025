@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Competition</title>
+    <link rel="stylesheet" href="../css/competition/english-cmp.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="assets/images/logo-eytho-only.png" type="image/png">
+</head>
+
+<body>
+
+    <nav class="navbar position-fixed w-100">
+        <div class="wrapper">
+            <div class="logo"><img src="../assets/images/logo-eytho.png" alt="Logo EYTHO" width="200px"></div>
+            <div class="menu-toggle" id="mobile-menu">
+                <svg class="bar mobile" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 16 16">
+                    <path fill="none" stroke="curentstroke" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="1.5" d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5" />
+                </svg>
+            </div>
+            <ul class="nav-list">
+                <div class="top-part d-flex justify-content-between align-items-center mt-1 w-100 p-3">
+                    <img class="logo-menu" src="../assets/images/logo-eytho.png" alt="Logo EYTHO" width="250px">
+                    <!-- <span class="close-menu" id="close-menu">&times;</span>  -->
+                    <svg class="close-menu mobile" id="close-menu" xmlns="http://www.w3.org/2000/svg" width="30"
+                        height="30" viewBox="0 0 24 24">
+                        <g fill="none" stroke="#D92526" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+                            <path d="M5 12H19">
+                                <animate fill="freeze" attributeName="d" dur="0.4s" values="M5 12H19;M12 12H12" />
+                                <set fill="freeze" attributeName="opacity" begin="0.4s" to="0" />
+                            </path>
+                            <path d="M5 5L19 5M5 19L19 19" opacity="0">
+                                <animate fill="freeze" attributeName="d" begin="0.2s" dur="0.4s"
+                                    values="M5 5L19 5M5 19L19 19;M5 5L19 19M5 19L19 5" />
+                                <set fill="freeze" attributeName="opacity" begin="0.2s" to="1" />
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <li><a href="../index.html" class="nav-text">Home</a></li>
+                <li><a href="../index.html#about-us" class="nav-text">About Us</a></li>
+                <li><a href="../index.html#competition" class="nav-text">Competition</a></li>
+                <li><a href="../index.html#location" class="nav-text">Location</a></li>
+                <li><a href="../index.html#contact-us" class="nav-text">Contact Us</a></li>
+                <!-- <li><a href="#" class="nav-text">Timeline Lomba</a></li> -->
+                <!-- <li>
+                    <a href="#" class="nav-user">Hi, <span style="font-size: 21px; font-weight: 600;">User
+                            Account</span> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="6" r="4" />
+                                <path stroke-linecap="round"
+                                    d="M19.998 18q.002-.246.002-.5c0-2.485-3.582-4.5-8-4.5s-8 2.015-8 4.5S4 22 12 22c2.231 0 3.84-.157 5-.437" />
+                            </g>
+                        </svg>
+                    </a>
+                </li> -->
+                <li>
+                    <div class="wrapper">
+                        <a href="#" class="btn-eytho-s btn-primary d-flex">
+                            Pendaftaran
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M15 14c-2.67 0-8 1.33-8 4v2h16v-2c0-2.67-5.33-4-8-4m-9-4V7H4v3H1v2h3v3h2v-3h3v-2m6 2a4 4 0 0 0 4-4a4 4 0 0 0-4-4a4 4 0 0 0-4 4a4 4 0 0 0 4 4" />
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="scroll-watcher"></div>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>English Competition</h1>
+            <h3>SMA/SMK</h4>
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <p>/</p>
+                    <p class="department">English Competition</p>
+                </div>
+        </div>
+        <svg class="bottom-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill-opacity="1"
+                d="M0,96L60,90.7C120,85,240,75,360,74.7C480,75,600,85,720,80C840,75,960,53,1080,48C1200,43,1320,53,1380,58.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+            </path>
+        </svg>
+    </div>
+
+    <div class="competition-wrapper">
+
+        <div class="competition-wrapper-content">
+            <div class="topper-content">
+                <div class="title">
+                    <h3>EYTHO 2025</h3>
+                    <h1>English Competition</h1>
+                    <p>English Competition adalah ajang untuk mengasah kemampuan berbahasa Inggris peserta. Terdapat dua
+                        lomba
+                        dalam kategori ini, yaitu Menulis Essay Poster Competition, dan Speech Competition. Setiap lomba
+                        memberikan kesempatan untuk mengekspresikan kreativitas dan penguasaan bahasa. Kompetisi ini
+                        menjadi
+                        wadah bagi peserta untuk menunjukkan bakat dan keterampilan mereka.
+                    </p>
+                </div>
+                
+            </div>
+
+            <div class="competition competition-left">
+                <div class="text">
+                    <h1>Essay Poster Competition</h1>
+                    <p>The Essay Competition offers participants the chance to express their critical thoughts on
+                        current issues in Bali’s hospitality industry. Focusing on challenges and opportunities within
+                        the sector, participants are encouraged to propose innovative solutions to help Bali maintain
+                        its appeal as a global destination. <br>
+
+                        <br>
+
+                        This competition helps participants improve their writing, critical thinking, and ability to
+                        present ideas clearly. Winners will be judged based on originality, depth of analysis, and
+                        writing quality. <br>
+
+                        <br>
+
+                        Join us and contribute your voice to shaping Bali’s tourism future!
+                    </p>
+
+                    <div class="buttons">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf4hrpIvxDHzDPgpqEK-OMkB3xgSSkqlyNz43S60PyJUKwKig/viewform" class="btn-eytho btn-primary">
+                            Daftar Sekarang
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+                                    d="M5 12h14m-6 6l6-6m-6-6l6 6" />
+                            </svg>
+                        </a>
+                        <button class="btn-eytho btn-outline openModalBtn" data-target="modal1">
+                            Timeline Lomba
+                        </button>
+                        <a href="https://drive.google.com/file/d/1FEccyQ1Ttq0Y_H-2KatNG9tt_UecRazF/view?usp=drive_link" class="rulesle">Rules & Regulations</a>
+                    </div>
+
+                    <div id="modal1" class="modal" style="overflow: hidden;">
+                        <div class="modal-content" style="width: 95%;">
+                            <div class="modal-header" style="border-bottom: 0;">
+                                <h2>Timeline Essay Poster Competition</h2>
+                                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" />
+                                </svg>
+                            </div>
+                            <div class="modal-body">
+                                <div class="main">
+                                    <!-- <h3 class="head">Timeline</h3> -->
+                                    <div class="timeline-container">
+                                        <ul>
+                                            <li>
+                                                <h3 class="heading">Pendaftaran</h3>
+                                                <p>
+                                                    Pendaftaran dapat dilakukan pada link berikut
+                                                </p>
+                                                <a
+                                                    href="https://docs.google.com/forms/d/e/1FAIpQLSf4hrpIvxDHzDPgpqEK-OMkB3xgSSkqlyNz43S60PyJUKwKig/viewform">Klik
+                                                    disini</a>
+                                                <span class="date">Senin, 9 December 2024 - Jum'at, 13 Januari
+                                                    2025</span>
+                                                <span class="circle"></span>
+                                            </li>
+                                            <li>
+                                                <h3 class="heading">Technical Meeting (Online)</h3>
+                                                <p>
+                                                    Membahas dan membicarakan aspek-aspek teknis atau topik-topik yang
+                                                    berkaitan dengan perlombaan yang dilaksanakan secara online melalui
+                                                    zoom.
+                                                </p>
+                                                <span class="date">Jum'at, 17 Januari 2025</span>
+                                                <span class="circle"></span>
+                                            </li>
+                                            <li>
+                                                <h3 class="heading">Pelaksanaan Lomba</h3>
+                                                <p>
+                                                    Speech Competition dilaksanakan secara Offline di Kampus Elizabeth
+                                                    International - Ezzy Smart Resort, Jl. Hayam Wuruk No.199, Kota
+                                                    Denpasar, Bali.
+                                                    Pengumuman pemenang akan dilakukan pada akhir sesi
+                                                </p>
+                                                <span class="date">Senin, 20 Januari 2025</span>
+                                                <span class="circle"></span>
+                                            </li>
+                                            <li>
+                                                <h3 class="heading">Penyerahan Pemenang Lomba</h3>
+                                                <p>
+                                                    Penyerahan hadiah pemenang lomba akan dilakukan di Kampus Elizabeth
+                                                    International - Ezzy Smart Resort, Jl. Hayam Wuruk No.199, Kota
+                                                    Denpasar, Bali.
+                                                </p>
+                                                <span class="date">TBA</span>
+                                                <span class="circle"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="image">
+                    <img src="../assets/images/essay-poster-competition.jpg" alt="Placeholder Image">
+                </div>
+                <div class="pattern">
+                    <img src="../assets/images/logo-eytho-only.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="competition competition-right">
+                <div class="text">
+                    <h1>Speech Competition</h1>
+                    <p>The competition will consist of two rounds; Prepared Speech and Impromptu Speech. <br>
+
+                        <br>
+
+                        In the first round (Prepared Speech), participants must present their ideas in a standing
+                        position regarding the topic given using TedTalks style. Each participant is allowed to perform
+                        within 5-7 minutes. <br>
+
+                        <br>
+
+                        After the Prepared Speech, all participants must join the Impromptu Speech based on the lottery
+                        topic.
+                    </p>
+
+
+
+                    <div class="buttons">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf4hrpIvxDHzDPgpqEK-OMkB3xgSSkqlyNz43S60PyJUKwKig/viewform" class="btn-eytho btn-primary">
+                            Daftar Sekarang
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+                                    d="M5 12h14m-6 6l6-6m-6-6l6 6" />
+                            </svg>
+                        </a>
+                        <button class="btn-eytho btn-outline openModalBtn" data-target="modal2">
+                            Timeline Lomba
+                        </button>
+                        <a href="https://drive.google.com/file/d/1FEccyQ1Ttq0Y_H-2KatNG9tt_UecRazF/view?usp=drive_link" class="rulesle">Rules & Regulations</a>
+                    </div>
+
+                    <div id="modal2" class="modal" style="overflow: hidden;">
+                        <div class="modal-content" style="width: 95%;">
+                            <div class="modal-header" style="border-bottom: 0;">
+                                <h2>Timeline Speech Competition</h2>
+                                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" />
+                                </svg>
+                            </div>
+                            <div class="modal-body">
+                                <div class="main">
+                                    <!-- <h3 class="head">Timeline</h3> -->
+                                    <div class="timeline-container">
+                                        <ul>
+                                            <li>
+                                                <h3 class="heading">Pendaftaran</h3>
+                                                <p>
+                                                    Pendaftaran dapat dilakukan pada link berikut
+                                                </p>
+                                                <a
+                                                    href="https://docs.google.com/forms/d/e/1FAIpQLSf4hrpIvxDHzDPgpqEK-OMkB3xgSSkqlyNz43S60PyJUKwKig/viewform">Klik
+                                                    disini</a>
+                                                <span class="date">Senin, 9 December 2024 - Jum'at, 13 Januari
+                                                    2025</span>
+                                                <span class="circle"></span>
+                                            </li>
+                                            <li>
+                                                <h3 class="heading">Technical Meeting (Online)</h3>
+                                                <p>
+                                                    Membahas dan membicarakan aspek-aspek teknis atau topik-topik yang
+                                                    berkaitan dengan perlombaan yang dilaksanakan secara online melalui
+                                                    zoom.
+                                                </p>
+                                                <span class="date">Senin, 13 Januari 2025</span>
+                                                <span class="circle"></span>
+                                            </li>
+                                            <li>
+                                                <h3 class="heading">Pelaksanaan Lomba</h3>
+                                                <p>
+                                                    Speech Competition dilaksanakan secara Offline di Kampus Elizabeth
+                                                    International - Ezzy Smart Resort, Jl. Hayam Wuruk No.199, Kota
+                                                    Denpasar, Bali.
+                                                    Pengumuman pemenang akan dilakukan pada akhir sesi
+                                                </p>
+                                                <span class="date">Rabu, 22 Januari 2025</span>
+                                                <span class="circle"></span>
+                                            </li>
+                                            <li>
+                                                <h3 class="heading">Penyerahan Pemenang Lomba</h3>
+                                                <p>
+                                                    Penyerahan hadiah pemenang lomba akan dilakukan di Kampus Elizabeth
+                                                    International - Ezzy Smart Resort, Jl. Hayam Wuruk No.199, Kota
+                                                    Denpasar, Bali.
+                                                </p>
+                                                <span class="date">TBA</span>
+                                                <span class="circle"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="../assets/images/speech-competition.jpg" alt="Placeholder Image">
+                </div>
+                <div class="pattern">
+                    <img src="../assets/images/logo-eytho-only.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <g fill="currentColor" fill-rule="evenodd">
+                    <path d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                    <path d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                </g>
+            </svg>
+        </div>
+
+        <div class="navigation-competition" id="navigationMenu">
+            <div class="navigation-competition-content">
+                <div class="title">
+                    <h1>Kompetisi Lainnya</h1>
+                </div>
+
+                <div class="content">
+
+                    <a href="#" class="competition-nav active">
+                        <div class="image-nav">
+                            <img src="../assets/images/essay-poster-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Essay Poster Competition</h6>
+                            <p>Essay Competition offers participants...</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/speech-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Speech Competition</h6>
+                            <p>The competition will consist of two rounds...</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/making-bed-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Making Bed Competition</h6>
+                            <p>Dalam Making Bed Competition bertema...</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/creative-towel-arts-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Creative Towel Arts Competition</h6>
+                            <p>Dalam Making Bed Competition bertema...</p>
+                        </div>
+                    </a>
+
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/creative-making-bed-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Creative Making Bed Competition</h6>
+                            <p>Dalam Making Bed Competition bertema...</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/business-plan-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Business Plan Competition</h6>
+                            <p>Dalam rangka menciptakan wadah bagi...</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/pes-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>E-Sport Pro Evolution Soccer (PES) Competition</h6>
+                            <p>Lomba E-Sport PES mengundang para gamer...</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/webcraft-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Webcraft - Web Design Competition</h6>
+                            <p>Kompetisi membuat desain web dengan peserta...</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/barista-open-service-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Barista Open Service Competition</h6>
+                            <p>Barista Open Service Competition Kompetisi ...</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/mixoflair&accuration-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>MixoFlair & Accuration Competition</h6>
+                            <p>Dalam tantangan “Local Fusion Mocktail Flair,” ...</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/creative-table-setup-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Creative Table Setup Competition</h6>
+                            <p>Kompetisi Creative Table Setup mengajak Siswa-Siswi...</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/receptionist-sma-smk-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Receptionist Competition - SMA/SMK</h6>
+                            <p>Kompetisi yang diperuntukkan bagi para Reception...</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/receptionist-hotelier-umum-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Receptionist Competition - Hotelier/Umum</h6>
+                            <p>Kompetisi yang diperuntukkan bagi para Hotelier...</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/tour-guiding-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Tour Guiding Competition</h6>
+                            <p>Kompetisi yang diperuntukkan bagi Tour Guide...</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/black-box-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Black Box Competition</h6>
+                            <p>Para Siswa-Siswi SMA/SMK diundang...</p>
+                        </div>
+                    </a>
+
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/fruit-carving-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Fruit Carving Competition</h6>
+                            <p>Para Siswa-Siswi SMA/SMK diundang untuk...</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/main-course-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Fruit Carving Competition</h6>
+                            <p>Para Siswa-Siswi SMA/SMK diundang untuk...</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/dessert-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Dessert Competition</h6>
+                            <p>Para Siswa-Siswi SMA/SMK diundang untuk...</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/mobile-photography-contest.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Mobile Photography Contest</h6>
+                            <p>Membuat reels yang memperlihatkan Keseruan...</p>
+                        </div>
+                    </a>    
+
+                    <a href="#" class="competition-nav">
+                        <div class="image-nav">
+                            <img src="../assets/images/reels-competition.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Reels Contest</h6>
+                            <p>Membuat reels yang memperlihatkan Keseruan...</p>
+                        </div>
+                    </a>  
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="register-hook">
+        <div class="register-hook-content">
+            <h1>Tunggu Apa Lagi ?</h1>
+            <p>Ayo daftarkan dirimu sekarang juga dan raih prestasimu !</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf4hrpIvxDHzDPgpqEK-OMkB3xgSSkqlyNz43S60PyJUKwKig/viewform"
+                class="btn-eytho btn-light">
+                Register Now
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+                        d="M5 12h14m-6 6l6-6m-6-6l6 6" />
+                </svg>
+            </a>
+        </div>
+        <div class="pattern-hexagon"><img src="../assets/images/hexagon.png" alt=""></div>
+        <div class="pattern-eytho"><img src="../assets/images/logo-eytho-only.png" alt=""></div>
+    </div>
+
+    <div class="contact-us-wrapper" id="contact-us">
+        <div class="contact-us">
+            <div class="contact-us-content">
+                <div class="form-contact-us">
+                    <h2>Contact Us</h2>
+                    <p>Contact us if you need more information, we'll answer as soon as possible.</p>
+                    <form>
+                        <div class="form-group">
+                            <div class="wrapper">
+                                <div class="field">
+                                    <label for="name">Nama</label>
+                                    <input type="text" id="name" name="name" placeholder="Ex. Eytho 2025">
+                                </div>
+                                <div class="field">
+                                    <label for="phone">Telepon</label>
+                                    <input type="text" id="phone" name="phone" placeholder="00000000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Ex. eytho2025@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Pesan"></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit" class="btn-eytho btn-primary">
+                                Kirim
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.2" d="M5 12h14m-6 6l6-6m-6-6l6 6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="image-contact-us">
+                    <img src="../assets/images/contact-us.png" alt="Contact Us Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="backToTop">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+                <path stroke-dasharray="20" stroke-dashoffset="20" d="M12 21l0 -17.5">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0" />
+                </path>
+                <path stroke-dasharray="12" stroke-dashoffset="12" d="M12 3l7 7M12 3l-7 7">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0" />
+                </path>
+            </g>
+        </svg>
+    </div>
+
+    <div class="floating">
+        <div class="floating__container">
+            <div class="floating__toggle" id="floating-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M19.14 12.94c.04-.3.06-.61.06-.94c0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.49.49 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6s3.6 1.62 3.6 3.6s-1.62 3.6-3.6 3.6" />
+                </svg>
+            </div>
+
+
+            <ul style="margin-bottom: 0;">
+                <button id="fullscreen-btn" class="floating__link bg-transparent border-0 outline-0"
+                    style="outline: none;">
+                    <div class="floating__icon">
+                        <svg id="icon-maximize" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M3 3h6v2H6.462l4.843 4.843l-1.415 1.414L5 6.367V9H3zm0 18h6v-2H6.376l4.929-4.928l-1.415-1.414L5 17.548V15H3zm12 0h6v-6h-2v2.524l-4.867-4.866l-1.414 1.414L17.647 19H15zm6-18h-6v2h2.562l-4.843 4.843l1.414 1.414L19 6.39V9h2z" />
+                        </svg>
+
+                        <svg id="icon-minimize" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" style="display: none;">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2.1"
+                                d="M5 9h4m0 0V5m0 4L4 4m15 5h-4m0 0V5m0 4l5-5M5 15h4m0 0v4m0-4l-5 5m15-5h-4m0 0v4m0-4l5 5" />
+                        </svg>
+                    </div>
+                </button>
+
+                <a href="index.html" class="floating__link">
+                    <div class="floating__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 576 512">
+                            <path fill="currentColor"
+                                d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0M571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93" />
+                        </svg>
+                    </div>
+                </a>
+
+                <button class="floating__link bg-transparent border-0" style="outline: none;" onclick="toggleMode()">
+                    <div class="floating__icon">
+                        <svg id="light-mode" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-width="3">
+                                <circle cx="12" cy="12" r="4" stroke-linejoin="round" />
+                                <path stroke-linecap="round"
+                                    d="M20 12h1M3 12h1m8 8v1m0-18v1m5.657 13.657l.707.707M5.636 5.636l.707.707m0 11.314l-.707.707M18.364 5.636l-.707.707" />
+                            </g>
+                        </svg>
+
+                        <svg id="dark-mode" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" style="display: none;">
+                            <path fill="currentColor"
+                                d="m15.844 3.344l-1.428.781l1.428.781l.781 1.428l.781-1.428l1.428-.781l-1.428-.781l-.781-1.428zm-5.432.814A8 8 0 1 0 18.93 16A9 9 0 0 1 10 7c0-.98.131-1.937.412-2.842M2 12C2 6.477 6.477 2 12 2h1.734l-.868 1.5C12.287 4.5 12 5.69 12 7a7 7 0 0 0 8.348 6.87l1.682-.327l-.543 1.626C20.162 19.137 16.417 22 12 22C6.477 22 2 17.523 2 12m18.5-5.584l.914 1.67l1.67.914l-1.67.914l-.914 1.67l-.914-1.67L17.916 9l1.67-.914z" />
+                        </svg>
+                    </div>
+                </button>
+
+            </ul>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <footer class="footer" id="footer">
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                <div class="footer-section logo-section">
+                    <img src="../assets/images/logo-eytho.png" alt="Logo" class="footer-logo">
+                    <p>
+                        Ezzy Youth Tourism & Hospitality Olympics (EYTHO) 2025 adalah ajang kompetisi bagi siswa SMA/SMK
+                        ataupun Hotelier/Umum.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8" />
+                                    <path d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m17.5 6.51l.01-.011" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        d="m14 12l-3.5 2v-4z" />
+                                    <path
+                                        d="M2 12.708v-1.416c0-2.895 0-4.343.905-5.274c.906-.932 2.332-.972 5.183-1.053C9.438 4.927 10.818 4.9 12 4.9s2.561.027 3.912.065c2.851.081 4.277.121 5.182 1.053S22 8.398 22 11.292v1.415c0 2.896 0 4.343-.905 5.275c-.906.931-2.331.972-5.183 1.052c-1.35.039-2.73.066-3.912.066s-2.561-.027-3.912-.066c-2.851-.08-4.277-.12-5.183-1.052S2 15.602 2 12.708Z" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M16.6 5.82s.51.5 0 0A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48" />
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Competition</h4>
+                    <ul>
+                        <li><a href="english-competition.html">English Competiton</a></li>
+                        <li><a href="#">Housekeeping Competition</a></li>
+                        <li><a href="#">Business Competition</a></li>
+                        <li><a href="#">IT Competition</a></li>
+                        <li><a href="#">Food & Beverage Competition</a></li>
+                        <li><a href="#">Front Office Competition</a></li>
+                        <li><a href="#">Culinary Competition</a></li>
+                        <li><a href="#">Culinary Creative & Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>
+                            <a href="https://maps.app.goo.gl/LoUgxNMB5uX6SVmVA"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
+                                        <path
+                                            d="M9.493 15.917a.5.5 0 0 1-.41.576a17.4 17.4 0 0 0-6.805 2.705a.5.5 0 1 1-.556-.831a18.4 18.4 0 0 1 7.195-2.86a.5.5 0 0 1 .576.41m5.014 0a.5.5 0 0 1 .576-.41a18.4 18.4 0 0 1 7.195 2.86a.5.5 0 1 1-.556.83a17.4 17.4 0 0 0-6.805-2.704a.5.5 0 0 1-.41-.576" />
+                                        <path
+                                            d="M6.5 10a5.5 5.5 0 1 1 11 0c0 2.661-1.326 5.019-2.604 6.68a18.3 18.3 0 0 1-2.353 2.515l-.212.18l-.013.011l-.004.003h-.001L12 19l-.287.41l-.002-.002l-.004-.003l-.013-.009l-.047-.034l-.169-.129a13 13 0 0 1-.59-.491a15 15 0 0 1-1.778-1.867C7.82 15.263 6.5 12.905 6.5 10m5.5 9l-.287.41a.5.5 0 0 0 .6-.02zm-.018-.643a17.3 17.3 0 0 0 2.122-2.287C15.326 14.481 16.5 12.34 16.5 10a4.5 4.5 0 1 0-9 0c0 2.595 1.18 4.737 2.39 6.25a14 14 0 0 0 2.092 2.107M12 8.5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3M9.5 10a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0" />
+                                    </g>
+                                </svg>
+                                Jl. Hayam Wuruk No.199, Kota Denpasar, Bali
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.link/xfsjdj">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg>
+                                +62 878 5785 0491 / Ms. Ayu Widya
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="https://wa.link/5f6tc5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg>
+                                +62 878 6255 8156 / Ms. Gita Wahyudi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.link/eqm16k">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg>
+                                +62 877 6123 8201 / Ms. Mita
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M5 5h13a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3m0 1c-.5 0-.94.17-1.28.47l7.78 5.03l7.78-5.03C18.94 6.17 18.5 6 18 6zm6.5 6.71L3.13 7.28C3.05 7.5 3 7.75 3 8v9a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2V8c0-.25-.05-.5-.13-.72z" />
+                                </svg>
+                                creative@ezzy-group.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EYTHO 2025</p>
+                <p>
+                    <a href="#">All right reserved.</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+    const navigationMenu = document.getElementById('navigationMenu');
+    navigationMenu.classList.toggle('open');
+}
+
+    </script>
+
+    <script src="../js/script.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

@@ -376,7 +376,7 @@ body.dark-mode {
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     width: 100%;
     scale: 0 1;
     border-radius: 100px;
@@ -395,7 +395,6 @@ body.dark-mode {
     background-color: var(--bg-content-secondary);
     padding: 2rem 1rem;
     box-sizing: border-box;
-    /* Pastikan padding dihitung dalam ukuran elemen */
 }
 
 .hero-section.light-mode {
@@ -2164,6 +2163,7 @@ body.scroll-disabled {
 
     .hero-title .title p {
         font-size: 1rem;
+        text-align: justify;
     }
 
     .hero-btn {
@@ -2468,6 +2468,7 @@ body.scroll-disabled {
 
     .competition .text p {
         font-size: 1rem;
+        text-align: justify;
     }
 
     .competition .text .title-header {
