@@ -385,6 +385,121 @@ body.dark-mode {
     animation-timeline: scroll(y);
 }
 
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 5vw;  /* Ukuran elemen dalam vw untuk responsivitas */
+    height: 5vw;
+    background: #d9252516;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 2vw; 
+    height: 2vw;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 2;
+    height: 2;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 3%;
+    height: 3%;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 2vw;
+    height: 2vw;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 5vw;
+    height: 5vw;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+    left: 75%;
+    width: 9vh;
+    height: 9vh;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 12vh;
+    height: 12vh;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 2vw;
+    height: 2vw;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 2vw;
+    height: 2vw;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 8%;
+    height: 18%;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
 .hero-section {
     width: 100%;
     min-height: 100vh;
@@ -486,6 +601,8 @@ body.dark-mode {
     justify-content: left;
     align-items: center;
     margin-top: 5vh;
+    position: relative;
+    z-index: 100;
 }
 
 .hero-btn .first-section,
@@ -1161,7 +1278,7 @@ body.dark-mode {
 .competition-content-title .left h1 {
     font-family: 'Manrope', serif;
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: capitalize;
     color: var(--text-dark);
 }
@@ -1507,7 +1624,7 @@ body.dark-mode {
     font-size: 4rem;
     margin-block-end: 1rem;
     text-transform: capitalize;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .location .support-text {
@@ -1603,8 +1720,8 @@ body.dark-mode {
 
 .contact-us-content .form-contact-us h2 {
     margin-bottom: 20px;
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 800;
     color: var(--text-dark);
 }
 
@@ -1628,17 +1745,17 @@ body.dark-mode {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 6px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
     font-size: 14px;
     transition: .3s;
-    /* background-color: var(--bg-content-for-secondary); */
     background-color: transparent;
 }
 
 .contact-us-content .form-group input:focus,
 .contact-us-content .form-group textarea:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 4px #f3484885;
     outline: none;
 }
 
@@ -1985,6 +2102,27 @@ body.scroll-disabled {
     transition: transform 0.3s ease-in-out;
 }
 
+.tooltip {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333333eb;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+.floating__link:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 @media (max-width: 500px) {
     .scroll-watcher {
@@ -2120,6 +2258,35 @@ body.scroll-disabled {
 
 
     /*  HERO SECTION */
+    .circles {
+        height: 120vh;
+    }
+    .circles li {
+        width: 12vw; /* Lebar yang lebih kecil, responsif pada layar kecil */
+        height: 12vw;
+    }
+
+    .circles li:nth-child(1) {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .circles li:nth-child(6) {
+        width: 18vw;
+        height: 18vw;
+    }
+
+    .circles li:nth-child(7) {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .circles li:nth-child(10) {
+        width: 25vw;
+        height: 25vw;
+    }
+
+
     .eytho-img-pattern {
         width: 18em;
         height: 18em;
