@@ -88,6 +88,23 @@
     <div class="scroll-watcher"></div>
 
     <div class="hero-section w-100" id="home">
+
+        <div class="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+
         <div class="hero-content" id="home">
             <div class="hero-title">
                 <div class="title">
@@ -351,19 +368,17 @@
                 </div>
 
                 <div class="the-buttons">
-                    <div class="regist-button">
-                        <a href="#" class="btn-eytho btn-primary registrasi">
-                            Regist Now
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2.2" d="M5 12h14m-6 6l6-6m-6-6l6 6" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="rulesle-btn">
-                        <a href="https://drive.google.com/file/d/1FEccyQ1Ttq0Y_H-2KatNG9tt_UecRazF/view?usp=drive_link"
-                            class="btn-eytho btn-outline rules">Rules & Regulation</a>
-                    </div>
+                    <a href="#" class="btn-eytho btn-primary">
+                        Regist Now
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2.2" d="M5 12h14m-6 6l6-6m-6-6l6 6" />
+                        </svg>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1FEccyQ1Ttq0Y_H-2KatNG9tt_UecRazF/view?usp=drive_link"
+                        class="btn-eytho btn-outline rules">
+                        Rules & Regulation
+                    </a>
                 </div>
 
             </div>
@@ -730,7 +745,7 @@
                 </iframe>
             </div>
 
-            
+
 
             <svg class="bottom-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill-opacity="1"
@@ -751,7 +766,7 @@
                             <div class="wrapper">
                                 <div class="field">
                                     <label for="name">Nama</label>
-                                    <input type="text" id="name" name="name" placeholder="Ex. Eytho 2025">
+                                    <input type="text" id="name" name="name" placeholder="Ex. Eytho">
                                 </div>
                                 <div class="field">
                                     <label for="phone">Telepon</label>
@@ -771,8 +786,8 @@
                             <button type="submit" class="btn-eytho btn-primary">
                                 Kirim
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
-                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2.2" d="M5 12h14m-6 6l6-6m-6-6l6 6" />
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2.2" d="M5 12h14m-6 6l6-6m-6-6l6 6" />
                                 </svg>
                             </button>
                         </div>
@@ -820,7 +835,7 @@
 
     <!-- </div> -->
 
-    
+
     <div id="backToTop">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
@@ -861,6 +876,7 @@
                                 d="M5 9h4m0 0V5m0 4L4 4m15 5h-4m0 0V5m0 4l5-5M5 15h4m0 0v4m0-4l-5 5m15-5h-4m0 0v4m0-4l5 5" />
                         </svg>
                     </div>
+                    <div class="tooltip">Fullscreen</div>
                 </button>
 
                 <a href="index.html" class="floating__link">
@@ -870,6 +886,7 @@
                                 d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0M571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93" />
                         </svg>
                     </div>
+                    <div class="tooltip">Home</div>
                 </a>
 
                 <button class="floating__link bg-transparent border-0" style="outline: none;" onclick="toggleMode()">
@@ -889,6 +906,7 @@
                                 d="m15.844 3.344l-1.428.781l1.428.781l.781 1.428l.781-1.428l1.428-.781l-1.428-.781l-.781-1.428zm-5.432.814A8 8 0 1 0 18.93 16A9 9 0 0 1 10 7c0-.98.131-1.937.412-2.842M2 12C2 6.477 6.477 2 12 2h1.734l-.868 1.5C12.287 4.5 12 5.69 12 7a7 7 0 0 0 8.348 6.87l1.682-.327l-.543 1.626C20.162 19.137 16.417 22 12 22C6.477 22 2 17.523 2 12m18.5-5.584l.914 1.67l1.67.914l-1.67.914l-.914 1.67l-.914-1.67L17.916 9l1.67-.914z" />
                         </svg>
                     </div>
+                    <div class="tooltip">Light/Dark</div>
                 </button>
 
             </ul>

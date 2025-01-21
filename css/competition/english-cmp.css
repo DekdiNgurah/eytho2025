@@ -537,6 +537,11 @@ body.no-scroll {
     border-radius: 5px;
 }
 
+.navigation-competition .logo-title {
+    width: 180px;
+    margin-block-end: 2vh;
+}
+
 .navigation-competition-content {
     position: sticky;
     top: 10%;
@@ -630,7 +635,6 @@ body.no-scroll {
     /* background-color: #fff; */
     /* border: 1px solid #ddd; */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-family: "Manrope", serif;
     position: relative;
     overflow: hidden;
@@ -1734,10 +1738,23 @@ body.scroll-disabled {
 
     }
 
-    .btn-eytho {
-        padding: 2vh 22.5vw;
+    .btn-eytho,
+    .openModalBtn {
+        width: 100%; 
+        max-width: 400px; 
+        margin: 0 auto; 
+        display: block; 
+        text-align: center; 
+    }
 
-        font-size: 0.9rem;
+    .btn-eytho {
+        padding: 1rem 0; 
+        font-size: 0.9rem; 
+    }
+
+    .openModalBtn {
+        padding: 1rem 0; 
+        font-size: 0.9rem; 
     }
 
     .btn-eytho-s {
@@ -1807,10 +1824,6 @@ body.scroll-disabled {
 
     .competition p {
         text-align: justify;
-    }
-
-    .openModalBtn {
-        padding: 4vw 13vh;
     }
 
 
@@ -1953,7 +1966,7 @@ body.scroll-disabled {
     }
 
     .register-hook-content {
-        padding-inline: 2rem; /* Kurangi padding horizontal */
+        padding-inline: 1rem; /* Kurangi padding horizontal */
         padding-block: 5rem; /* Kurangi padding vertical */
         gap: 0.5rem; /* Kurangi jarak antar elemen */
     }
