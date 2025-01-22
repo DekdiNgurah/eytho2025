@@ -656,7 +656,7 @@ h6.dark-mode {
 
 .navigation-competition-content .content .active {
     background: var(--third-color) !important;
-    color: var(--text-light) !important;
+    color: var(--text-light);
 }
 
 
@@ -669,7 +669,7 @@ h6.dark-mode {
 .navigation-competition-content .content .competition-nav p {
     font-size: 10px;
     margin: 0;
-    
+
     width: 200px;
     white-space: nowrap;
     overflow: hidden;
@@ -1980,6 +1980,7 @@ body.scroll-disabled {
 
     .navigation-competition-content {
         padding-block: 0;
+        top: 5%;
     }
 
     .navigation-competition.open {
@@ -2069,6 +2070,10 @@ body.scroll-disabled {
 
     .timeline-container ul::after {
         left: -40px;
+    }
+
+    .manually {
+        margin-top: 10vh !important;
     }
 
     .timeline-container ul li {

@@ -562,7 +562,7 @@ h6.dark-mode {
 .competition-wrapper .top-waves {
     position: absolute;
     left: 0;
-    top: -7%;
+    top: -5%;
 }
 
 .competition-wrapper .top-waves.light-mode {
@@ -656,7 +656,7 @@ h6.dark-mode {
 
 .navigation-competition-content .content .active {
     background: var(--third-color) !important;
-    color: var(--text-light) !important;
+    color: var(--text-light);
 }
 
 
@@ -669,7 +669,7 @@ h6.dark-mode {
 .navigation-competition-content .content .competition-nav p {
     font-size: 10px;
     margin: 0;
-    
+
     width: 200px;
     white-space: nowrap;
     overflow: hidden;
@@ -1024,7 +1024,7 @@ ul li:nth-child(even) .circle {
 
 ul li .date {
     position: absolute;
-    width: 180px;
+    width: 190px;
     height: 50px;
     background-image: linear-gradient(to bottom, #941111, #c54a15);
     border-radius: 15px;
@@ -1914,6 +1914,10 @@ body.scroll-disabled {
         text-align: center;
         padding: 0;
         padding-block-end: 2vh;
+    }
+
+    .navigation-competition-content {
+        top: 5%;
     }
 
     .navigation-competition-content .content .competition-nav p {

@@ -196,7 +196,7 @@ function toggleMode() {
         document.body.classList.remove('dark-mode');
         document.body.classList.add('light-mode');
 
-        const containers = document.querySelectorAll('div, nav, ul, p, svg, a');
+        const containers = document.querySelectorAll('div, nav, ul, li, p, svg, a, h1, h2, h6, span, svg, button');
         containers.forEach(container => {
             container.classList.remove('dark-mode');
             container.classList.add('light-mode');
@@ -209,7 +209,7 @@ function toggleMode() {
         document.body.classList.remove('light-mode');
         document.body.classList.add('dark-mode');
 
-        const containers = document.querySelectorAll('div, nav, ul, p, svg, a');
+        const containers = document.querySelectorAll('div, nav, ul, li, p, svg, a, h1, h2, h6, span, svg, button');
         containers.forEach(container => {
             container.classList.remove('light-mode');
             container.classList.add('dark-mode');
@@ -230,7 +230,7 @@ function loadMode() {
         document.body.classList.remove('light-mode');
         document.body.classList.add('dark-mode');
 
-        const containers = document.querySelectorAll('div, nav, ul, p, svg, a');
+        const containers = document.querySelectorAll('div, nav, ul, li, p, svg, a, h1, h2, h6, span, svg, button');
         containers.forEach(container => {
             container.classList.remove('light-mode');
             container.classList.add('dark-mode');
@@ -241,7 +241,7 @@ function loadMode() {
         document.body.classList.remove('dark-mode');
         document.body.classList.add('light-mode');
 
-        const containers = document.querySelectorAll('div, nav, ul, p, svg, a');
+        const containers = document.querySelectorAll('div, nav, ul, li, p, svg, a, h1, h2, h6, span, svg, button');
         containers.forEach(container => {
             container.classList.remove('dark-mode');
             container.classList.add('light-mode');
@@ -258,7 +258,7 @@ function resetModeToDefault() {
     document.body.classList.remove('dark-mode');
     document.body.classList.add('light-mode');
 
-    const containers = document.querySelectorAll('div, nav, ul, p, svg, a');
+    const containers = document.querySelectorAll('div, nav, ul, li, p, svg, a, h1, h2, h6, span, svg, button');
     containers.forEach(container => {
         container.classList.remove('dark-mode');
         container.classList.add('light-mode');

@@ -562,7 +562,7 @@ h6.dark-mode {
 .competition-wrapper .top-waves {
     position: absolute;
     left: 0;
-    top: -7%;
+    top: -4%;
 }
 
 .competition-wrapper .top-waves.light-mode {
@@ -656,7 +656,7 @@ h6.dark-mode {
 
 .navigation-competition-content .content .active {
     background: var(--third-color) !important;
-    color: var(--text-light) !important;
+    color: var(--text-light);
 }
 
 
@@ -669,7 +669,7 @@ h6.dark-mode {
 .navigation-competition-content .content .competition-nav p {
     font-size: 10px;
     margin: 0;
-    
+
     width: 200px;
     white-space: nowrap;
     overflow: hidden;
@@ -1334,7 +1334,6 @@ ul li a {
 .footer-section p {
     font-size: 14px;
     line-height: 1.6;
-    color: #cdcdcd;
 }
 
 .footer-section ul {
@@ -1976,6 +1975,10 @@ body.scroll-disabled {
         padding-inline: 1rem;
         overflow-y: auto;
         box-shadow: -2px 0 100px rgba(0, 0, 0, 0.266);
+    }
+
+    .navigation-competition-content {
+        top: 5%;
     }
 
     .navigation-competition-content {

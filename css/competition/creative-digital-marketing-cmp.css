@@ -656,8 +656,8 @@ h6.dark-mode {
 
 .navigation-competition-content .content .active {
     background: var(--third-color) !important;
-    color: var(--text-light) !important;
-}
+    color: var(--text-light);
+}   
 
 
 .navigation-competition-content h1 {
@@ -669,7 +669,7 @@ h6.dark-mode {
 .navigation-competition-content .content .competition-nav p {
     font-size: 10px;
     margin: 0;
-    
+
     width: 200px;
     white-space: nowrap;
     overflow: hidden;
@@ -1334,7 +1334,6 @@ ul li a {
 .footer-section p {
     font-size: 14px;
     line-height: 1.6;
-    color: #cdcdcd;
 }
 
 .footer-section ul {
@@ -1914,6 +1913,10 @@ body.scroll-disabled {
         text-align: center;
         padding: 0;
         padding-block-end: 2vh;
+    }
+
+    .navigation-competition-content {
+        top: 5%;
     }
 
     .navigation-competition-content .content .competition-nav p {
