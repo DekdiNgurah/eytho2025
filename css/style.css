@@ -1893,6 +1893,7 @@ span.dark-mode {
 .footer-section p {
     font-size: 14px;
     line-height: 1.6;
+    color: #cdcdcd;
 }
 
 .footer-section ul {
@@ -2765,7 +2766,8 @@ body.scroll-disabled {
 
     .read-more svg {
         width: 18px;
-        stroke: var(--third-color);
+        stroke: var(--third-color) !important;
+        fill: none !important;
     }
 
 
@@ -2995,7 +2997,7 @@ body.scroll-disabled {
     #backToTop {
         width: 40px;
         height: 40px;
-        bottom: 80px;
+        bottom: 120px;
         right: 20px;
         font-size: 16px;
         z-index: 2;
